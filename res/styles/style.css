@@ -413,4 +413,91 @@ a {
     gap: 30px 0;
   }
 }
+
+/********end products********/
+/********end main********/
+/********footer********/
+.footer {
+  background: #222224;
+  margin-top: 95px;
+}
+
+.footer .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "features" "subscribe" "coryright_and_social";
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: features;
+}
+
+.features .feature {
+  grid-area: feature;
+  text-align: center;
+}
+
+.subscribe {
+  background: url("../images/bg_subscribe.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 450px;
+}
+
+.subscribe .grid {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: subscribe;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subscribe .grid * {
+  text-align: center;
+}
+
+.coryright_and_social {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: coryright_and_social;
+}
+
+.copyright {
+  grid-area: copyright;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: social;
+}
 /*# sourceMappingURL=style.css.map */

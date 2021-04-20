@@ -328,3 +328,58 @@ a {
         gap: 30px 0;
     }
 }
+/********end products********/
+/********end main********/
+/********footer********/
+.footer {
+    background: #222224;
+    margin-top: 95px;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "features"
+            "subscribe"
+            "coryright_and_social";
+    }
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: features;
+    .feature {
+        grid-area: feature;
+        text-align: center;
+    }
+}
+.subscribe {
+    background: url("../images/bg_subscribe.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 450px;
+    .grid {
+        grid-area: subscribe;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        * {
+            text-align: center;
+        }
+    }
+}
+.coryright_and_social {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: coryright_and_social;
+}
+.copyright {
+    grid-area: copyright;
+}
+.social {
+    display: flex;
+    grid-area: social;
+}
