@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("catalog.css");
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +19,15 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .container {
@@ -400,8 +411,13 @@ a {
   background-color: white;
   border: 1px solid #f16d7f;
   padding: 1em 0;
-  max-width: 211px;
+  width: 211px;
   margin-top: 50px;
+}
+
+.products_button:hover {
+  color: white;
+  background-color: #f16d7f;
 }
 
 @media (max-width: 600px) {
@@ -583,7 +599,7 @@ a {
   background: #e1e1e1;
 }
 
-.subscribe_forms .subscribe_forms_inputs a {
+.subscribe_forms .subscribe_forms_inputs button {
   display: block;
   background: #e05c6e;
   color: white;
@@ -605,10 +621,6 @@ a {
           justify-content: space-between;
   padding: 30px 0;
   font-size: 16px;
-}
-
-.copyright a {
-  display: inline-block;
 }
 
 .social a {
@@ -678,4 +690,19 @@ a {
 }
 
 /********end footer********/
+/********Ниже я просто эксперементирую, буду рад усылшать отзыв по этому поводу********/
+.navigation_menu {
+  cursor: pointer;
+}
+
+#show_menu:checked + .testMenu {
+  display: block;
+}
+
+.testMenu {
+  background-color: green;
+  width: 100%;
+  height: 25px;
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
