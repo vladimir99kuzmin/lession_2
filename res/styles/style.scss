@@ -18,6 +18,15 @@ a {
     color: inherit;
 }
 
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .container {
     overflow: hidden;
     max-width: 1108px;
@@ -317,8 +326,12 @@ a {
     background-color: white;
     border: 1px solid #f16d7f;
     padding: 1em 0;
-    max-width: 211px;
+    width: 211px;
     margin-top: 50px;
+    &:hover {
+        color: white;
+        background-color: #f16d7f;
+    }
 }
 
 @media (max-width: 600px) {
@@ -439,7 +452,7 @@ a {
             box-shadow: none;
             background: #e1e1e1;
         }
-        a {
+        button {
             display: block;
             background: #e05c6e;
             color: white;
@@ -456,9 +469,6 @@ a {
     justify-content: space-between;
     padding: 30px 0;
     font-size: 16px;
-    a {
-        display: inline-block;
-    }
 }
 .social {
     a {
@@ -510,3 +520,21 @@ a {
     }
 }
 /********end footer********/
+/********Ниже я просто эксперементирую, буду рад усылшать отзыв по этому поводу********/
+.navigation_menu {
+    cursor: pointer;
+}
+
+#show_menu:checked + .testMenu {
+    display: block;
+}
+
+.testMenu {
+    background-color: green;
+    width: 100%;
+    height: 25px;
+    display: none;
+}
+
+@import url("catalog.css");
+//********CATALOG*********//
